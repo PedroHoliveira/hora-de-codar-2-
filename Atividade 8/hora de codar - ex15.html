@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*15- Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano
+    (não é necessário considerar o mês em que ela nasceu).*/
+
+         var ano_nasc = Number(prompt("Digite o seu ano de nascimento: "));
+         var ano_atual = Number(prompt("Digite o ano atual: "));
+
+         if ((ano_atual - ano_nasc) >= 18) {
+             document.write("Você pode votar!");
+         } else {
+             document.write("Você não pode votar esse ano");
+         }
+
+
+    </script>
+</body>
+</html>

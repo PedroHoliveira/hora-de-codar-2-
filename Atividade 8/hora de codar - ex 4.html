@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORA DE CODAR - EX 4</title>
+</head>
+<body>
+    <script>
+        /*4. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) 
+        e escrever a soma dos 2 maiores.
+        */
+
+        var num1 = parseInt(prompt("Insira um número: "));
+        var num2 = parseInt(prompt("Insira um número: "));
+        var num3 = parseInt(prompt("Insira um número: "));
+
+        if (num1 < num3 && num1 < num2){
+            alert("A soma dos dois maiores é de: " + (num3 + num2));
+        }
+        else if (num2 < num1 && num2 < num3){
+            alert("A soma dos dois maiores é de: " + (num1 + num3));
+        }
+        else if (num3 < num1 && num3 < num2){
+            alert("A soma dos dois maiores é de: " + (num2 + num1));
+            alert(`A soma dos dois maiores é de: ${num2 + num1}`);
+        }
+            
+    </script>
+</body>
+</html>

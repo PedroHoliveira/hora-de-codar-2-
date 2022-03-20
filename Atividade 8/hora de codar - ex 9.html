@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //9. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados.
+        // Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+         
+        var soma = 0  
+        var nums = []
+        for(var i = 0; i < 6; i++){
+            nums.push (Number(prompt("Digite os 6 números")))
+            }
+            for(var i = 0; i <6; i++)
+            {
+                if (nums[i] <= 72){
+                soma = soma + nums[i]
+                }
+            }
+            console.log(nums, soma);
+            document.write("Seus números são: " + nums + " <br> a soma deles é: " + soma);
+            document.write("<br>Os números maiores que 72, não são considerados na somatoria")
+        
+       
+        
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

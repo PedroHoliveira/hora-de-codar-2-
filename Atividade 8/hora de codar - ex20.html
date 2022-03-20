@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*20 - Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm).
+Calcular e imprimir o seguinte: 
+Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do seu perímetro. 
+Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. 
+Se o número de lados for igual a 5 escrever PENTÁGONO. 
+Observação: Considere que o usuário só informará os valores 3, 4 ou 5. 
+Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. 
+Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
+*/
+        var poligono = String(prompt("Qual polígono deseja calcular? Escolha entre Triangulo, Quadrado ou Pentagono"))
+
+        if (poligono == "triangulo"){
+            var lado1 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var lado2 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var lado3 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var perimetro = lado1 + lado2 + lado3
+            document.write("O valor do perimetro é de: " + perimetro);
+        }else if (poligono == "quadrado"){
+            var lado1 = parseInt(prompt("Digite o tamanho dos lados em cm"));
+            var perimetro = lado1 * 4
+            document.write("O valor do perimetro é de: " + perimetro);
+        }else if (poligono == "pentagono"){
+            var lado1 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var lado2 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var lado3 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var lado4 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var lado5 = parseInt(prompt("Digite o tamanho de um dos lados em cm"));
+            var perimetro = lado1 + lado2 + lado3 + lado4 + lado5
+            document.write("O valor do perimetro é de: " + perimetro);
+        }else if (poligono != "triangulo" || "quadrado" || "pentagono"){
+            document.write("Polígono invalido!");
+        }
+    
+        
+
+
+
+
+    </script>
+</body>
+</html>

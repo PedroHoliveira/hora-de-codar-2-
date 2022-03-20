@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota1 = Number(prompt("Insira a primeira nota: "));
+        var nota2 = Number(prompt("Insira a segunda nota"));
+        var nota_op = Number(prompt("Caso o aluno tenha feito, insira a nota optativa: "));
+        var media = 0
+        
+        if (nota1 && nota2 > nota_op) {
+            media = (nota1 + nota2) / 2
+            document.write("A media final é de: " + media);
+        } else if (nota_op && nota1 > nota2){
+            media = (nota1 + nota_op) / 2
+            document.write("A media final é de: " + media);
+        } else if (nota_op && nota2 > nota1){
+            media = (nota_op + nota2) / 2
+            document.write("A media final é de:" + media);
+        }
+        if (media >= 6) {
+            document.write("<br>Aluno aprovado!")
+        } else if (media < 3){
+            document.write("<br>Aluno reprovado!")
+        } else if (media >=3 && media<6){
+            document.write("<br>O aluno ficou de exame!")
+        }
+
+
+
+    </script>
+</body>
+</html>

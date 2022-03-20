@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*24 - Um zoológico muito louco. Escreva um programa que leia a idade de 2 javalis e 2 girafas 
+(considere que a idade dos javalis será sempre diferente, assim como das girafas).
+Calcule e escreva a soma das idades do javali mais velho com a girafa mais nova,
+ e o produto das idades do javali mais novo com a girafa mais velha.
+ */
+        var javali_1 = parseInt(prompt("Escreva a idade de um dos javalis"));
+        var javali_2 = parseInt(prompt("Escreva a idade do outro javali"));
+        var girafa_1 = parseInt(prompt("Escreva a idade de uma das girafas"));
+        var girafa_2 = parseInt(prompt("Escreva a idade da outra girafa"));
+        var soma = 0
+        var soma2 = 0
+       if (javali_1 > javali_2 && girafa_1 > girafa_2) {
+            soma = javali_1 + girafa_2
+            soma2 = javali_2 + girafa_1
+            document.write("A soma da idade do Javali mais velho com a girafa mais nova é de: " + soma);
+            document.write("<br>A soma da idade do Javali mais novo com a girafa mais velha é de: " + soma2);
+       } else if (javali_2 > javali_1 && girafa_2 > girafa_1){
+            soma = javali_2 + girafa_1
+            soma2 = javali_1 + girafa_2
+            document.write("A soma da idade do Javali mais velho com a girafa mais nova é de: " + soma2);
+            document.write("<br>A soma da idade do Javali mais novo com a girafa mais velha é de: " + soma);
+       } 
+       if (javali_1 == javali_2 && girafa_1 == girafa_2){
+            document.write("As idades entre as mesmas especies precisam ser diferentes.")
+       }
+
+
+
+    </script>
+</body>
+</html>

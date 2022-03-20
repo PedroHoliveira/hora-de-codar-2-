@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//23 - Faça um programa em que o usuário informe 20 valores e no final, escreva o maior e o menor valor lido.
+        var nums = []
+        for(var i = 0; i < 20; i++){
+            nums.push (Number(prompt("Digite os 20 números")))
+            }
+        
+        var maior = 0
+        var menor = 0
+
+        for(var i = 1; i < 20; i++){
+            if (nums[1] > nums[maior]){
+                maior = i
+            }else if(nums[i] < nums[menor]){
+                menor = i
+            }
+        }
+        document.write("O maior valor é : " + nums[maior] + "<br>e o menor : " + nums[menor])
+    </script>
+</body>
+</html>

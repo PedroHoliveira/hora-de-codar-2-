@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*11 - Um motorista de táxi deseja calcular o rendimento de seu carro na praça.
+        Sabendo-se que o preço do combustível é de R$ 2,90, escreva um programa para ler:
+        a marcação do odômetro (Km) no início do dia, a marcação (Km) no final do dia, o número de litros de combustível gasto e o valor total (R$) recebido dos passageiros.
+        Calcular e escrever: a média do consumo em Km/L e o lucro (líquido) do dia.
+        */
+
+       // SOMA DO KM_DIA E KM_NOITE = KM_GERAL
+       //KM_GERAL MULTIPLICA COMBUSTIVEL = LITROS GASTOS
+       //VALOR DOS PASSAGEIROS - LITROS GASTOS = LUCRO DIARIO
+
+       var km_Dia = Number(prompt("Escreva a marcação do odometro: "));
+       var km_Noite = Number(prompt("Escreva a marcação do odometro no final do dia: "));
+       var combustivel = 2.90
+       var km_geral = Number(km_Dia + km_Noite);
+       var combustivel_gasto = Number(km_geral * combustivel);
+       var valor_passageiro = Number(prompt("Insira o valor total recebidos dos passageiros: "));
+       var lucro = Number(valor_passageiro - combustivel_gasto);
+
+       document.write("O lucro liquido é de: " + lucro)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
